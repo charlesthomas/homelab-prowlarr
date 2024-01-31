@@ -7,7 +7,7 @@ metadata:
     external-dns.alpha.kubernetes.io/hostname: prowlarr.crt.house
     external-dns.alpha.kubernetes.io/target: 
     nginx.org/websocket-services: prowlarr
-    gethomepage.dev/href: prowlarr.crt.house
+    gethomepage.dev/href: https://prowlarr.crt.house
     gethomepage.dev/enabled: "true"
     gethomepage.dev/description: Media Indexer
     gethomepage.dev/group: Media
