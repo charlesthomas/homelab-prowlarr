@@ -1,13 +1,26 @@
-_commit: v1.1.2-8-g0945ce2
+_commit: v1.1.2-15-gd63c39c
 _src_path: /Users/crthomas/code/charlesthomas/homelab-template
 additionalResources: ''
 backups: false
 helm: false
-ingress: false
+homepageDescription: Media Indexer
+homepageEnabled: true
+homepageGroup: Media
+homepageIcon: prowlarr
+homepageName: prowlarr
+ingClass: nginx-crt-house
+ingExtraAnnotations: ''
+ingHost: prowlarr.crt.house
+ingName: prowlarr
+ingPathType: Prefix
+ingSecret: ''
+ingWebSockets: true
+ingress: true
 labels: ''
 name: prowlarr
 namespace: prowlarr
 pvc: false
+reloader: true
 resources:
 - backups.yaml
 - deployments.yaml
@@ -19,5 +32,7 @@ resources:
 - statefulsets.yaml
 service: false
 serviceAccount: false
+svcName: prowlarr
+svcPortNum: 9696
 upstreamURL: https://prowlarr.com/
 url: https://github.com/charlesthomas/homelab-prowlarr

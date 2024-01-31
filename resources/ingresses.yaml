@@ -1,0 +1,32 @@
+---
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: prowlarr
+  annotations:
+    external-dns.alpha.kubernetes.io/hostname: prowlarr.crt.house
+    external-dns.alpha.kubernetes.io/target: 
+    nginx.org/websocket-services: prowlarr
+    gethomepage.dev/href: prowlarr.crt.house
+    gethomepage.dev/enabled: "true"
+    gethomepage.dev/description: Media Indexer
+    gethomepage.dev/group: Media
+    gethomepage.dev/icon: prowlarr
+    gethomepage.dev/name: prowlarr
+    gethomepage.dev/pod-selector: ""
+spec:
+  ingressClassName: nginx-crt-house
+  rules:
+    - host: "prowlarr.crt.house"
+      http:
+        paths:
+          - path: "/"
+            pathType: Prefix
+            backend:
+              service:
+                name: prowlarr
+                port:
+                  number: 9696
+  tls:
+    - hosts:
+      - prowlarr.crt.house
