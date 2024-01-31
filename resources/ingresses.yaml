@@ -12,7 +12,7 @@ metadata:
     gethomepage.dev/description: Media Indexer
     gethomepage.dev/group: Media
     gethomepage.dev/icon: prowlarr
-    gethomepage.dev/name: prowlarr
+    gethomepage.dev/name: Prowlarr
     gethomepage.dev/pod-selector: ""
 spec:
   ingressClassName: nginx-crt-house

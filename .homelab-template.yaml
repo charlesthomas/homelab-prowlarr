@@ -7,7 +7,7 @@ homepageDescription: Media Indexer
 homepageEnabled: true
 homepageGroup: Media
 homepageIcon: prowlarr
-homepageName: prowlarr
+homepageName: Prowlarr
 ingClass: nginx-crt-house
 ingExtraAnnotations: ''
 ingHost: prowlarr.crt.house
