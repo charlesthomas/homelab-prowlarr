@@ -1,4 +1,4 @@
-_commit: v1.1.2
+_commit: v1.4.17
 _src_path: /Users/crthomas/code/charlesthomas/homelab-template
 additionalResources: ''
 backups: false
@@ -15,7 +15,6 @@ ingHost: prowlarr.crt.house
 ingName: prowlarr
 ingPathType: Prefix
 ingSecret: ''
-ingSvcPortNum: 9696
 ingWebSockets: true
 ingress: true
 labels: ''
