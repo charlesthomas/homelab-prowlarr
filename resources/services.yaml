@@ -17,13 +17,10 @@ kind: Service
 metadata:
   name: postgres
   namespace: prowlarr
-  annotations:
-    external-dns.alpha.kubernetes.io/hostname: prowlarrdb.crt.house
-    metallb.universe.tf/address-pool: internal
   labels:
     app: prowlarr
 spec:
-  type: LoadBalancer
+  type: ClusterIP
   ports:
     - name: postgres
       port: 5432
