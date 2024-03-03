@@ -14,7 +14,7 @@ metadata:
     gethomepage.dev/name: Prowlarr
     gethomepage.dev/pod-selector: ""
 spec:
-  ingressClassName: nginx-crt-house
+  ingressClassName: nginx-internal
   rules:
     - host: "prowlarr.crt.house"
       http:
