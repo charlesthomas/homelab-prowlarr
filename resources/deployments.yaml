@@ -36,7 +36,7 @@ spec:
           - /config/config.xml
       containers:
       - name: prowlarr
-        image: ghcr.io/linuxserver/prowlarr:1.25.4.4818-ls90
+        image: ghcr.io/linuxserver/prowlarr:1.25.4.4818-ls91
         imagePullPolicy: IfNotPresent
         ports:
         - name: prowlarr
