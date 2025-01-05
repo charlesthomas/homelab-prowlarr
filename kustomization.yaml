@@ -15,6 +15,14 @@ resources:
 - resources/service-accounts.yaml
 - resources/services.yaml
 - resources/statefulsets.yaml
+
+images:
+  - name: postgres
+    newTag: "14.15"
+  - name: prowlarr
+    newName: ghcr.io/linuxserver/prowlarr
+    newTag: 1.29.2.4915-ls99
+
 patches:
 - patch: |-
     apiVersion: apps/v1
