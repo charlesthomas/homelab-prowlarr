@@ -21,7 +21,7 @@ images:
     newTag: "14.15"
   - name: prowlarr
     newName: ghcr.io/linuxserver/prowlarr
-    newTag: 1.30.2.4939-ls103
+    newTag: 1.30.2.4939-ls104
 
 patches:
 - patch: |-
